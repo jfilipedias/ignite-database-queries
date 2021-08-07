@@ -6,6 +6,6 @@ services:
     ports: 
       - 5432:5432
     environment:
-      - POSTGRES_USER=ignite
-      - POSTGRES_PASSWORD=docker-postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=docker
       - POSTGRES_DB=queries_challenge
