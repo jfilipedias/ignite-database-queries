@@ -1,0 +1,11 @@
+services:
+  database: 
+    image: postgres
+    container_name: queries_challenge_db
+    restart: always
+    ports: 
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=ignite
+      - POSTGRES_PASSWORD=docker-postgres
+      - POSTGRES_DB=queries_challenge
